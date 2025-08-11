@@ -11,6 +11,8 @@
         let age = window.prompt("Enter your age : ", "14"); // my current age, default is 14
         let MaxAge = window.prompt("You will live until the ripe old age of :", "70"); // the maximum age I think I can live to, default is 100
         let NumPerDay = window.prompt("Number of Snacks daily : ", "3"); // the number of biscuits(Skyflakes) I eat per day, default is 3
+        // if you put a non-numeric value, it will be treated as a string, so you need to convert it to a number using Number() function
+        // if you put letters instead of numbers, it will return NaN (Not a Number) when you try to do arithmetic operations
 
         let confirm = window.confirm("You sure of your answers??"); // confirm the inputs
         // boolean data type, true or false
