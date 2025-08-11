@@ -1,0 +1,41 @@
+<DOCTYPE! HTML>
+<html>
+<head>
+    <title>
+    </title>
+</head>
+<body>
+
+    <script>
+        window.alert("This is Rara's First Non-Graded Exercise!");
+        let age = window.prompt("Enter your age : ", "14"); // my current age, default is 14
+        let MaxAge = window.prompt("You will live until the ripe old age of :", "70"); // the maximum age I think I can live to, default is 100
+        let NumPerDay = window.prompt("Number of Snacks daily : ", "3"); // the number of biscuits(Skyflakes) I eat per day, default is 3
+
+        let confirm = window.confirm("You sure of your answers??"); // confirm the inputs
+        if (confirm) {
+            let totalRequired = (Number(NumPerDay) * 365) * (Number(MaxAge) - Number(age)); // the number of biscuits I eat per year
+            // display on browser
+            // "Number" converts string input to a number value
+            document.write("You will need " + totalRequired + " biscuits to last you until the ripe old age of " + MaxAge + ".");
+            // pop-up dialog box
+            alert(`You will need ${totalRequired} biscuits to last you until the ripe old age of ${MaxAge}.`);
+            // browser's inspect console
+            console.log("You will need " + totalRequired + "biscuits to last you until the ripe old age of " + MaxAge + ".");
+
+        } else {
+            window.alert("Please click run again and enter your age, maximum age, and number of snacks daily correctly.");
+
+
+        }
+
+
+    </script>
+
+
+
+
+
+</body>
+
+</html>
