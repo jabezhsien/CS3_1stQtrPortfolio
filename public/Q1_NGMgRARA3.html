@@ -19,14 +19,29 @@
         <label> Enter Number of Snacks
             <input id="NumPerDay" />
             </label><br/>    
+            <br>
+
+        <button onclick="calculateSnacks()"> Accept Input</button>       
 
         <p> Result : 
             <span id="resultHere"></span>
         </p>
-        <button> Accept Input</button>    
+         
         <br>
         <br>
-    <script src="script2.js"></script>
+    <script>
+        function calculateSnacks() {
+            let age = document.getElementById("age").value;
+            let MaxAge = document.getElementById("MaxAge").value;
+            let NumPerDay = document.getElementById("NumPerDay").value;
+            document.getElementById("resultHere").innerText = "You will need " + (MaxAge-age)*NumPerDay*365 + " biscuits to last you until the ripe old age of " + MaxAge + ".";
+            
+            /*
+            document.getElementById("resultHere").innerHTML = `<b>result</b>`; //output 'result'
+            */
+
+        }
+    </script>
 
 
 
