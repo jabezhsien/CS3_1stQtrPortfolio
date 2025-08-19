@@ -1,0 +1,56 @@
+<DOCTYPE! HTML>
+<html>
+<head>
+    <title>
+    </title>
+</head>
+<body>
+
+
+        <h2>Q1 3rd Graded Exercise submitted by Jabez Hsien G. Rara of 9 - Magnesium</h2>
+        <label> Meal Price:  
+            <input id="mp" />
+            </label><br/>
+
+        <label> Tip: 
+            <input id="tip" />
+            </label><br/>
+            
+        <label> Service Charge: 
+            <input id="sc" />
+            </label><br/>    
+            <br>
+
+        <button onclick="totalMeal()"> Accept Input</button>       
+
+        <p> Total Meal : 
+            <span id="resultHere"></span>
+        </p>
+         
+        <br>
+        <br>
+    <script>
+        function totalMeal() {
+            let mp = document.getElementById("mp").value;
+            let tip = document.getElementById("tip").value;
+            let sc = document.getElementById("sc").value;
+            let totalCost = Number(mp) + Number(tip) + (Number(sc)/100 * Number(mp));
+            let fixedTotalCost = totalCost.toFixed(2);
+            document.getElementById("resultHere").innerText = fixedTotalCost;
+            
+            
+
+        }
+    </script>
+
+
+
+
+
+
+</body>
+<footer>
+  <p>W3Schools. (n.d) <i>JavaScript Number toFixed() Method</i>.</p>
+  <p><a href="https://www.w3schools.com/jsref/jsref_tofixed.asp">https://www.w3schools.com/jsref/jsref_tofixed.asp</a></p>
+</footer>
+</html>

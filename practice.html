@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>Number Methods</h1>
+
+        <h3>Use of Number(), parseInt(), parseFloat(), Math.floor(), Math.random()</h3>
+        <label> Enter Your age: 
+            <input id="age" />
+            </label><br/>
+
+        <label> Enter Your Maximum age
+            <input id="MaxAge" />
+            </label><br/>
+            
+        <label> Enter Number of Snacks
+            <input id="NumPerDay" />
+            </label><br/>    
+            <br>
+
+        <button onclick="calculateSnacks()"> Accept Input</button>       
+
+        <p> Result : 
+            <span id="resultHere"></span>
+        </p>
+
+        <br>
+        <br>
+
+         <script>
+        function calculateSnacks() {
+            let age = document.getElementById("age").value;
+            let MaxAge = document.getElementById("MaxAge").value;
+            let NumPerDay = document.getElementById("NumPerDay").value;
+            document.getElementById("resultHere").innerText = "You will need " + (MaxAge-age)*NumPerDay*365 + " biscuits to last you until the ripe old age of " + MaxAge + ".";
+            </script>
+            let n1 = 10;
+            let number1 = n1.toString(); // converts number to string
+            // parseInt() and parseFloat() can be used to convert strings to numbers (they only accept the numerical value before the first non-numeric character)
+
+
+
+
+
+
+
+
+</body>
+
+</html>
